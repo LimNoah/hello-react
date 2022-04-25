@@ -5,19 +5,19 @@ class EventPractice extends Component {
     message: "",
   };
 
-  constructor(props) {
-    super(props);
-    this.handleChange = this.handleChange.bind(this);
-    this.handleClick = this.handleClick(this);
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.handleChange = this.handleChange.bind(this);
+  //   this.handleClick = this.handleClick.bind(this);
+  // }
 
-  handleChange(e) {
+  handleChange = (e) => {
     this.setState({
       message: e.target.value,
     });
   }
 
-  handleClick() {
+  handleClick = () => {
     alert(this.state.message);
     this.setState({
       message: "",
@@ -34,6 +34,7 @@ class EventPractice extends Component {
           placeholder="아무거나 입력하세요."
           value={this.state.message}
           onChange={this.handleChange}
+          onKeyUp={() => {if(window.event.keyCode==13){this.handleClick()}}}
         />
         <button onClick={this.handleClick}>확인</button>
       </div>
