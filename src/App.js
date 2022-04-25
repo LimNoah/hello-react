@@ -6,7 +6,8 @@ import React, { Component } from 'react';
 // import Say from "./Say";
 // import EventPractice from "./EventPractice";
 // import EventPracticeFunctionComponent from "./EventPracticeFunctionComponent"
-import ValidationSample from "./ValidationSample";
+// import ValidationSample from "./ValidationSample";
+import ScrollBox from './ScrollBox';
 
 // const App = () => {
 //   // return <MyComponent>React</MyComponent>;
@@ -19,7 +20,8 @@ import ValidationSample from "./ValidationSample";
 
 class App extends Component {
   render() { 
-    return <ValidationSample />
+    // return <ValidationSample />
+    return <ScrollBox />
   }
 }
  
