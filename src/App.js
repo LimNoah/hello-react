@@ -7,7 +7,8 @@ import React, { Component } from 'react';
 // import EventPractice from "./EventPractice";
 // import EventPracticeFunctionComponent from "./EventPracticeFunctionComponent"
 // import ValidationSample from "./ValidationSample";
-import ScrollBox from './ScrollBox';
+// import ScrollBox from './ScrollBox';
+import IterationSample from './IterationSample';
 
 // const App = () => {
 //   // return <MyComponent>React</MyComponent>;
@@ -21,15 +22,16 @@ import ScrollBox from './ScrollBox';
 class App extends Component {
   render() { 
     // return <ValidationSample />
-    return (
-      <div>
-        <ScrollBox ref={(ref) => this.scrollBox = ref} />
-        <button onClick={() => this.scrollBox.scrollToBottom()}>
-          맨 밑으로
-        </button>
-      </div>
+    // return (
+    //   <div>
+    //     <ScrollBox ref={(ref) => this.scrollBox = ref} />
+    //     <button onClick={() => this.scrollBox.scrollToBottom()}>
+    //       맨 밑으로
+    //     </button>
+    //   </div>
       
-    );
+    // );
+    return <IterationSample />
   }
 }
  
