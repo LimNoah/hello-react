@@ -4,7 +4,7 @@ class RefSample extends Component {
     input = React.createRef();
 
     handleFocus = () => {
-        this.input.currenr.focus();
+        this.input.current.focus();
     }
 
     render() { 
