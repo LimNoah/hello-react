@@ -10,6 +10,7 @@ import React, { Component } from 'react';
 // import ScrollBox from './ScrollBox';
 // import IterationSample from './IterationSample';
 import LifeCycleSample from './LifeCycleSample';
+import ErrorBoundary from './ErrorBoundary';
 
 // const App = () => {
 //   // return <MyComponent>React</MyComponent>;
@@ -51,7 +52,9 @@ class App extends Component {
     return (
       <div>
         <button onClick={ this.handleClick }>랜덤 색상</button>
-        <LifeCycleSample color={ this.state.color }/>
+        <ErrorBoundary>
+          <LifeCycleSample color={ this.state.color }/>
+        </ErrorBoundary>
       </div>
     );
   }
